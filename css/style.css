@@ -1,0 +1,50 @@
+/* I made my own style nothing is taken from outside */
+body{
+    background-color: rgba(252, 232, 142, 0.603);
+    text-align: center;
+}
+
+.style_form{
+    background: linear-gradient(rgba(191, 236, 68, 0.884), rgba(0, 255, 242, 0.637), rgb(255, 231, 123), rgba(250, 44, 55, 0.699));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 55%;
+    padding: 1%;
+}
+
+form{
+    margin: 2%;
+    line-height: 280%;
+}
+
+#first_name, #last_name{
+    width: 40%;
+}
+
+label, input, select, button{
+    padding: 1.25%;
+    font-size: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+button{
+    margin-top: 5%;
+}
+
+h1{
+    font-style: italic;
+    font-size: 35px;
+}
+
+#showanswers{
+    display: none;
+}
+
+p{
+    font-size: 25px;
+    display: inline;
+}

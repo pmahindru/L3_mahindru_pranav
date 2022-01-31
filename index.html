@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Form and Display Data </title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="style_form">
+		<h1 id="changeheading"> FORM </h1>
+		<form>
+			<!-- this part is for the submit the form  -->
+			<div id="forminputs">
+				<!-- inputs and labels for the first and last name -->
+				<label for="first_name">First Name</label>
+				<input type="text" id="first_name" required>
+
+				<br>
+				<br>
+
+				<label for="last_name">Last Name</label>
+				<input type="text" id="last_name" required>
+
+				<br>
+				<br>
+
+				<!-- radio button for the gender -->
+				<label> Gender </label>
+
+				<br>
+
+				<input type="radio" id="male" name="gender" value="male" checked>
+				<label for="male"> Male </label>
+
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female"> Female </label>
+				
+				<input type="radio" id="non-binary" name="gender" value="non-binary">
+				<label for="non-binary"> Non Binary</label>
+
+				<br>
+				<br>
+
+				<!-- select menu for country -->
+				<label> Select Your Country </label>
+				<select name="country" id="select_country">
+					<option value="" selected disabled> Please Select Any Country </option>
+					<option value="Canada"> Canada </option>
+					<option value="USA"> USA </option>
+					<option value="India"> India </option>
+					<option value="Europe"> Europe </option>
+					<option value="Brazil"> Brazil</option>
+				</select>
+
+				<br>
+
+				<!-- submit button -->
+				<button id="submit"> SUBMIT </button>
+			</div>	
+			
+			<!-- this part is for showing the response that what user put in the form -->
+			<div id="showanswers">
+
+				<label for="first_name"> First Name ---> </label>
+				<p id="fname"></p>
+
+				<br>
+
+				<label for="last_name"> Last Name ---> </label>
+				<p id="lname"></p>
+
+				<br>
+
+				<label> Gender ---> </label>
+				<p id="gender_select"></p>
+
+				<br>
+
+				<label> Country ---> </label>
+				<p id="country"></p>
+
+				<br>
+
+				<button id="back"> Back to Form </button>
+			</div>
+
+		</form>
+	</div>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
